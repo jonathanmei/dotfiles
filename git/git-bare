@@ -1,0 +1,11 @@
+# 0. Get the repo name
+repo_name=$(basename $1 .git)
+
+# 1. Clone the repo into a hidden .bare folder
+git clone --bare $1 $repo_name/.bare && cd $repo_name
+
+# 2. Tell the root folder where the Git history is hidden
+echo "gitdir: ./.bare" > .git
+
+# 3. Fix the fetch configuration to see all remote branches
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
