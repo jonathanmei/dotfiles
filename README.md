@@ -7,7 +7,7 @@ Then
 ```
 stow [app]
 ```
-Not a dotfile, but
+Not a dotfile, but (might need `sudo`):
 ```
 stow -t /usr/local/bin/ git
 ```
