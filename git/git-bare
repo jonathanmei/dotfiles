@@ -1,4 +1,9 @@
+#!/usr/bin/env bash
 # 0. Get the repo name
+if [[ -z "$1" ]]; then
+  echo "Usage: git bare <repo-url>" >&2
+  exit 1
+fi
 repo_name=$(basename $1 .git)
 
 # 1. Clone the repo into a hidden .bare folder
