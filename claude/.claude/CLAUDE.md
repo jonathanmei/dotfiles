@@ -1,0 +1,22 @@
+Principles:
+  - Python:
+     - Use uv for package management.
+     - Use ruff for linting.
+     - Use pydantic for typing.
+     - Use git worktrees for implementing features in parallel. Each directory in the repo's top-level is a worktree.
+     - Use test-driven development.
+     - Dont Repeat Yourself.
+     - When deisgning scripts, allow parameters to be specified via config file. For running experiments, create config files to document settings.
+  - LaTeX:
+     - Vectors (lowercase): `\mathbf`
+     - Matrices & tensors (uppercase): `\mathbf`
+     - Statistical Estimates: `\widehat`
+     - Approximations: `\widetilde`
+     - Intermediate computations: `'`, or `\overline`
+     - Random scalars: `\mathsf`
+     - Random vectors, matrices, tensors: `\boldsymbol{\mathsf{}}`
+     - Named sets (reals, integers, …): `\mathbb`
+     - Generic sets: `\mathcal`
+     - Other distinguished objects: explicit non-`\mathit` command
+     - Indexing: use comma-separated subscripts by default; switch to square brackets when subscripts are already taken for another purpose.
+     - Iteration counts: subscript or parenthesized superscript — prefer whichever doesn't clash with the indexing rule above.
