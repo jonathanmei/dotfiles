@@ -3,7 +3,7 @@ Principles:
      - Use uv for package management.
      - Use ruff for linting.
      - Use pydantic for typing.
-     - Use git worktrees for implementing features in parallel. Each directory in the repo's top-level is a worktree.
+     - Use git worktrees in the working directory to implement features in parallel. Name the worktree directory according to the branch, not the agent.
      - Use test-driven development.
      - Dont Repeat Yourself.
      - When deisgning scripts, allow parameters to be specified via config file. For running experiments, create config files to document settings.
