@@ -1,28 +1,15 @@
 Principles:
   - Don't Repeat Yourself (DRY).
   - Python:
-     - Use `uv` for package management.
-     - Use `uv run` to execute Python scripts and commands.
-     - Don't edit `pyproject.toml` directly. Instead, use `uv add` and `uv add --dev` to manage dependencies,
-     - Use `pytest` for testing code.
-     - When a test fails, run the last failed test first using `uv run pytest --last-failed`      
-     - Use Test Driven Development (TDD). Write tests before implementation.
-     - Use ruff for linting.
-     - Use pydantic for typing.
-     - Use type hints for all function parameters and return types.
-     - Use git worktrees in new subdirectories in the working directory. Name new branches descriptively. Name the directory according to the branch, not the agent.
-     - Use numpy-style docstrings for all functions and classes you create.
-     - When deisgning scripts, allow parameters to be specified via config file. For running experiments, create config files to document settings.
-  - LaTeX:
-     - Vectors (lowercase): `\mathbf`
-     - Matrices & tensors (uppercase): `\mathbf`
-     - Statistical Estimates: `\widehat`
-     - Approximations: `\widetilde`
-     - Intermediate computations: `'`, or `\overline`
-     - Random scalars: `\mathsf`
-     - Random vectors, matrices, tensors: `\boldsymbol{\mathsf{}}`
-     - Named sets (reals, integers, …): `\mathbb`
-     - Generic sets: `\mathcal`
-     - Other distinguished objects: explicit non-`\mathit` command
-     - Indexing: use comma-separated subscripts by default; switch to square brackets when subscripts are already taken for another purpose.
-     - Iteration counts: subscript or parenthesized superscript — prefer whichever doesn't clash with the indexing rule above.
+    - Use `uv` for package management.
+    - Use `uv run` to execute Python scripts and commands.
+    - Don't edit `pyproject.toml` directly. Instead, use `uv add` and `uv add --dev` to manage dependencies,
+    - Use `pytest` for testing code.
+    - When a test fails, run the last failed test first using `uv run pytest --last-failed`      
+    - Use Test Driven Development (TDD). Write tests before implementation.
+    - Use ruff for linting.
+    - Use pydantic for typing.
+    - Use type hints for all function parameters and return types.
+    - Use git worktrees in new subdirectories in the working directory. Name new branches descriptively. Name the directory according to the branch, not the agent.
+    - Use numpy-style docstrings for all functions and classes you create.
+    - When deisgning scripts, allow parameters to be specified via config file. For running experiments, create config files to document settings.
