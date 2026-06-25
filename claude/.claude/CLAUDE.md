@@ -1,11 +1,17 @@
 Principles:
+  - Don't Repeat Yourself (DRY).
   - Python:
-     - Use uv for package management.
+     - Use `uv` for package management.
+     - Use `uv run` to execute Python scripts and commands.
+     - Don't edit `pyproject.toml` directly. Instead, use `uv add` and `uv add --dev` to manage dependencies,
+     - Use `pytest` for testing code.
+     - When a test fails, run the last failed test first using `uv run pytest --last-failed`      
+     - Use Test Driven Development (TDD). Write tests before implementation.
      - Use ruff for linting.
      - Use pydantic for typing.
-     - Use git worktrees in the working directory to implement features in parallel. Name the worktree directory according to the branch, not the agent.
-     - Use test-driven development.
-     - Dont Repeat Yourself.
+     - Use type hints for all function parameters and return types.
+     - Use git worktrees in new subdirectories in the working directory. Name new branches descriptively. Name the directory according to the branch, not the agent.
+     - Use numpy-style docstrings for all functions and classes you create.
      - When deisgning scripts, allow parameters to be specified via config file. For running experiments, create config files to document settings.
   - LaTeX:
      - Vectors (lowercase): `\mathbf`
